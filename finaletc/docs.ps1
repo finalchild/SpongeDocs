@@ -19,7 +19,7 @@ New-Item -Path deploy -Force -ItemType Directory
 cd deploy
 git init
 # add origin as remote
-git remote add origin 'https://github.com/Spongy/SpongeDocs.git' >$null
+git remote add origin 'https://github.com/finalchild/SpongeDocs-KoreanI18n.git' >$null
 git checkout --orphan gh-pages
 git pull origin gh-pages
 cd ..

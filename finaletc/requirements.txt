@@ -4,4 +4,4 @@ colorama==0.3.7
 pystache==0.5.4
 requests==2.12.4
 sphinx-JDLinker==1.3
--e git+https://github.com/finalchild/sponge_docs_theme.git#egg=sponge_docs_theme
+-e git+https://github.com/finalchild/sponge_docs_theme.git@finalchild#egg=sponge_docs_theme
