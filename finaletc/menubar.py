@@ -17,6 +17,7 @@ def listdirs(folder):
     return [d for d in os.listdir(folder) if os.path.isdir(os.path.join(folder, d))]
 
 langs_args = sorted(listdirs("locale/") + ['en_US'])
+langs_args.remove('.git')
 used_langs = [get_lang(langs_mapper[lang]) for lang in langs_args]
 
 #get list of current deployed releases excluding 'master'
@@ -39,26 +40,25 @@ v = 'master'
 curverdict = {'currentversion': v}
 curverlist = []
 curverlist.append(dict(curverdict))
-print (curverlist)
 
 # construct the path to the theme in virtualenv
 layout_path = os.path.join('src', 'sponge-docs-theme', 'sponge_docs_theme', 'layout.html')
 
 # write to file
-with open(layout_path , 'r') as f:
+with open(layout_path , 'r', encoding="utf8") as f:
     tpl = f.read()
 
-with open(layout_path , 'w') as f:
+with open(layout_path , 'w', encoding="utf8") as f:
     f.write(pystache.render('{{={[ ]}=}} ' + tpl, dict(vers=newlist)))
 
-with open(layout_path , 'r') as f:
+with open(layout_path , 'r', encoding="utf8") as f:
     tpl = f.read()
 
-with open(layout_path , 'w') as f:
+with open(layout_path , 'w', encoding="utf8") as f:
     f.write(pystache.render('{{={| |}=}} ' + tpl, dict(langs=used_langs)))
 
-with open(layout_path , 'r') as f:
+with open(layout_path , 'r', encoding="utf8") as f:
     tpl = f.read()
 
-with open(layout_path , 'w') as f:
+with open(layout_path , 'w', encoding="utf8") as f:
     f.write(pystache.render('{{={@ @}=}} ' + tpl, dict(curver=curverlist)))
