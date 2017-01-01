@@ -60,15 +60,6 @@
               {|/langs|}
             </ul>
         </div>
-        <div class="menu-right">
-          <div><i class="fa fa-fw fa-tag"></i><a>Version</a></div>
-            <ul class="dropdown" id="ddvers">
-              <li><a href="master/en/"><i class="fa fa-fw fa-tag"></i> latest</a></li>
-              {[#vers]}
-              <li><a href="{[apiversion]}/en/"><i class="fa fa-fw fa-tag"></i> {[apiversion]}</a></li>
-              {[/vers]}
-            </ul>
-        </div>
         <h3>{{ _('Navigation') }}</h3>
       </div>
     </div>
@@ -86,21 +77,6 @@
           </a>
         {|/langs|}
       </div>
-      <div class="row center">
-        <h1>구식 API 릴리즈</h1>
-      </div>
-      {[#vers]}
-      <div class="row langs-old">
-        <h2>API {[apiversion]}</h2>
-        <div class="langslist">
-        {|#langs|}
-            <a href="{[apiversion]}/{|crowdin_code|}/" class="lang">
-              <img src="//d1ztvzf22lmr1j.cloudfront.net/images/flags/{|crowdin_code|}.png" alt="{|name|} 국기"/><br/>
-            </a>
-        {|/langs|}
-        </div>
-      </div>
-      {[/vers]}
     </div>
   </body>
 </html>
