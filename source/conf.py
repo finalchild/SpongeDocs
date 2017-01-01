@@ -129,7 +129,7 @@ html_theme_path = [sponge_docs_theme.get_html_theme_path()]
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-#html_title = None
+html_title = "<project> v<release> 설명문서"
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
