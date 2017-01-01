@@ -26,7 +26,7 @@
 
     </script>
 
-    <title>Sponge Documentation</title>
+    <title>Sponge 설명문서</title>
   </head>
   <body class="homepage">
     <div class="topbar">
@@ -40,14 +40,15 @@
           <div class="sp-logo-chevron"><i class="fa fa-fw fa-chevron-down"></i></div>
           <div class="sp-logo-menu sp-skip-handler">
             <ul class="sp-logo-dropdown" id="ddleft">
-              <a href="https://www.spongepowered.org"><li><i class="fa-fw fa fa-home"></i>Homepage</li></a>
-              <a href="https://forums.spongepowered.org"><li><i class="fa-fw fa fa-comments"></i>Forums</li></a>
-              <a href="https://github.com/SpongePowered"><li><i class="fa-fw fa fa-code"></i>Code</li></a>
-              <a class="sp-forums-home" href="https://docs.spongepowered.org"><li class="active"><i class="fa-fw fa fa-book"></i>Docs</li></a>
-              <a href="https://jd.spongepowered.org"><li><i class="fa-fw fa fa-graduation-cap"></i>Javadocs</li></a>
-              <a href="https://forums.spongepowered.org/c/plugins/plugin-releases"><li><i class="fa-fw fa fa-plug"></i>Plugins</li></a>
-              <a href="https://www.spongepowered.org/downloads"><li><i class="fa-fw fa fa-download"></i>Downloads</li></a>
-              <a href="https://www.spongepowered.org/chat"><li><i class="fa-fw fa fa-comment"></i>Chat</li></a>
+              <a href="https://www.spongepowered.org"><li><i class="fa-fw fa fa-home"></i>홈페이지</li></a>
+              <a href="https://forums.spongepowered.org"><li><i class="fa-fw fa fa-comments"></i>포럼</li></a>
+              <a href="https://github.com/SpongePowered"><li><i class="fa-fw fa fa-code"></i>코드</li></a>
+              <a class="sp-forums-home" href="https://docs.spongepowered.org"><li class="active"><i class="fa-fw fa fa-book"></i>설명문서</li></a>
+              <a class="sp-forums-home2" href="https://sponge.finalchild.me"><li class="active"><i class="fa-fw fa fa-book"></i>설명문서(비공식 한국어 번역)</li></a>
+              <a href="https://jd.spongepowered.org"><li><i class="fa-fw fa fa-graduation-cap"></i>Javadoc</li></a>
+              <a href="https://forums.spongepowered.org/c/plugins/plugin-releases"><li><i class="fa-fw fa fa-plug"></i>플러그인</li></a>
+              <a href="https://www.spongepowered.org/downloads"><li><i class="fa-fw fa fa-download"></i>다운로드</li></a>
+              <a href="https://www.spongepowered.org/chat"><li><i class="fa-fw fa fa-comment"></i>채팅</li></a>
             </ul>
           </div>
         </div>
@@ -55,7 +56,7 @@
           <div><i class="fa fa-fw fa-globe"></i></div>
             <ul class="dropdown" id="ddlang">
               {|#langs|}
-              <li><a href="master/{|crowdin_code|}/" class="lang"><img src="//d1ztvzf22lmr1j.cloudfront.net/images/flags/{|crowdin_code|}.png" alt="Flag for {|name|}"/></a></li>
+              <li><a href="master/{|crowdin_code|}/" class="lang"><img src="//d1ztvzf22lmr1j.cloudfront.net/images/flags/{|crowdin_code|}.png" alt="{|name|} 국기"/></a></li>
               {|/langs|}
             </ul>
         </div>
@@ -74,19 +75,19 @@
 
     <div class="landing">
       <div class="row center">
-        <h1>Welcome to the Sponge Documentation</h1>
-        <p class="info-text">The official, curated documentation for the Sponge project. Please choose a language below:</p>
+        <h1>SpongeDocs-KoreanI18n에 오신 것을 환영합니다</h1>
+        <p class="info-text">SpongeDocs의 비공식 한국어 번역본입니다. 아래에서 언어를 고르십시오:</p>
       </div>
       <div class="row langs">
         {|#langs|}
           <a href="master/{|crowdin_code|}/" class="lang">
-            <img src="//d1ztvzf22lmr1j.cloudfront.net/images/flags/{|crowdin_code|}.png" alt="Flag for {|name|}"/><br/>
+            <img src="//d1ztvzf22lmr1j.cloudfront.net/images/flags/{|crowdin_code|}.png" alt="{|name|} 국기"/><br/>
             {|name|}
           </a>
         {|/langs|}
       </div>
       <div class="row center">
-        <h1>Old API Releases</h1>
+        <h1>구식 API 릴리즈</h1>
       </div>
       {[#vers]}
       <div class="row langs-old">
@@ -94,7 +95,7 @@
         <div class="langslist">
         {|#langs|}
             <a href="{[apiversion]}/{|crowdin_code|}/" class="lang">
-              <img src="//d1ztvzf22lmr1j.cloudfront.net/images/flags/{|crowdin_code|}.png" alt="Flag for {|name|}"/><br/>
+              <img src="//d1ztvzf22lmr1j.cloudfront.net/images/flags/{|crowdin_code|}.png" alt="{|name|} 국기"/><br/>
             </a>
         {|/langs|}
         </div>
